@@ -31,7 +31,7 @@ vue ui
 ```
 
 ```
-"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"
+"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"
 ```
 
 ### Customize configuration
