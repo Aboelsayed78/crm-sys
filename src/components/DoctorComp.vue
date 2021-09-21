@@ -4,7 +4,9 @@
       <span class="doctor-img"><img src="../assets/My-IMG.jpg" alt="" /></span>
       <span class="name">Dr. hazem soliman</span>
       <span class="category">Dentistry</span>
-      <button onclick="document.getElementById('doctor-page').style.display='block'">
+      <button
+        onclick="document.getElementById('doctor-page').style.display='block'"
+      >
         view profile
       </button>
     </div>
@@ -52,7 +54,7 @@ export default {
         font-size: 18px;
       }
     }
-    button{
+    button {
       cursor: pointer;
       width: 100%;
       border: none;

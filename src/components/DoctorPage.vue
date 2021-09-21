@@ -25,7 +25,12 @@
           <div class="data-row">
             <label for="name"><b>name</b></label>
             <span>youssef ahmed</span>
-            <input type="text" name="name" class="vanish" value="youssef ahmed" />
+            <input
+              type="text"
+              name="name"
+              class="vanish"
+              value="youssef ahmed"
+            />
           </div>
 
           <div class="data-row">
@@ -76,11 +81,7 @@
           <div class="data-row">
             <label for="joined-date"><b>joined at</b></label>
             <span>15/6/2021</span>
-            <input
-              type="date"
-              name="joined-date"
-              class="vanish"
-            />
+            <input type="date" name="joined-date" class="vanish" />
           </div>
 
           <div class="doctor-bio">
@@ -91,18 +92,18 @@
               officia odio totam deserunt adipisci libero ea, repudiandae,
               laborum voluptatum maxime!
             </p>
-            <textarea
-              class="vanish"
-              cols="15"
-              rows="5"
-            >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet sed
+            <textarea class="vanish" cols="15" rows="5">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet sed
               porro fugiat magni cumque nesciunt, aperiam voluptates sequi est
               officia odio totam deserunt adipisci libero ea, repudiandae,
-              laborum voluptatum maxime!</textarea>
+              laborum voluptatum maxime!</textarea
+            >
           </div>
 
           <div class="modal-foot">
-            <button type="button" id="save-doctor" class="vanish">save profile</button>
+            <button type="button" id="save-doctor" class="vanish">
+              save profile
+            </button>
             <button type="button" id="edit-doctor">edit ticket</button>
           </div>
         </div>
@@ -229,7 +230,8 @@ export default {
           width: 35%;
           margin-right: 5%;
         }
-        input, select {
+        input,
+        select {
           padding: 5px;
           width: 35%;
           font-size: 16px;

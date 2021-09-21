@@ -15,30 +15,55 @@
         <div class="patient-active">
           <span class="tickets-title">active tickets</span>
           <div class="tickets-contain">
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
           </div>
         </div>
         <div class="patient-finish">
           <span class="tickets-title">finished tickets</span>
           <div class="tickets-contain">
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
           </div>
         </div>
         <div class="clear"></div>
       </div>
-      <button class="patient-page" onclick="document.getElementById('patient-page').style.display='block'">
+      <button
+        class="patient-page"
+        onclick="document.getElementById('patient-page').style.display='block'"
+      >
         view profile
       </button>
-      <button class="new-ticket" onclick="document.getElementById('new-ticket').style.display='block'">
+      <button
+        class="new-ticket"
+        onclick="document.getElementById('new-ticket').style.display='block'"
+      >
         new ticket
       </button>
-      <button class="new-ticket" onclick="document.getElementById('new-ticket').style.display='block'">
+      <button
+        class="new-ticket"
+        onclick="document.getElementById('new-ticket').style.display='block'"
+      >
         send email
       </button>
       <div class="clear"></div>
@@ -108,13 +133,13 @@ export default {
         padding: 0 1%;
       }
       &.date,
-      &.address{
+      &.address {
         width: 15%;
       }
       &.date {
         border-right: 2px solid $main-color;
       }
-      &.email{
+      &.email {
         display: none;
       }
     }
@@ -127,14 +152,15 @@ export default {
     border-top: none;
     margin-bottom: 5px;
     padding: 10px 15px;
-    .patient-tickets{
+    .patient-tickets {
       margin: 40px 0 20px;
-      .patient-active, .patient-finish{
+      .patient-active,
+      .patient-finish {
         width: 49.25%;
         margin-right: 1.5%;
         float: left;
         position: relative;
-        .tickets-title{
+        .tickets-title {
           text-transform: capitalize;
           background-color: #42b983;
           padding: 5px 5px 5px 5px;
@@ -197,7 +223,7 @@ export default {
           }
         }
       }
-      .patient-finish{
+      .patient-finish {
         margin-right: 0;
       }
     }
@@ -211,7 +237,7 @@ export default {
       font-size: 20px;
       text-transform: capitalize;
       padding: 10px 0;
-      &.new-ticket{
+      &.new-ticket {
         width: 11.3%;
         border-right: 1px solid #fff;
         border-radius: 0;

@@ -29,11 +29,7 @@
 
           <div class="data-row">
             <label for="phone"><b>phone</b></label>
-            <input
-              type="number"
-              name="id"
-              placeholder="Doctor Phone"
-            />
+            <input type="number" name="id" placeholder="Doctor Phone" />
           </div>
 
           <div class="data-row">
@@ -58,19 +54,12 @@
 
           <div class="data-row">
             <label for="id"><b>email</b></label>
-            <input
-              type="email"
-              name="id"
-              placeholder="Doctor Email"
-            />
+            <input type="email" name="id" placeholder="Doctor Email" />
           </div>
 
           <div class="data-row">
             <label for="joined-date"><b>joined at</b></label>
-            <input
-              type="date"
-              name="joined-date"
-            />
+            <input type="date" name="joined-date" />
           </div>
 
           <div class="doctor-bio">
@@ -172,7 +161,8 @@ export default {
           text-transform: capitalize;
           margin-right: 5%;
         }
-        input, select {
+        input,
+        select {
           padding: 5px;
           width: 35%;
           font-size: 16px;

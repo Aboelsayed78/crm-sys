@@ -29,12 +29,12 @@ export default {
   name: "MainPage",
   props: {},
   components: {},
-  mounted: function (){
-    $('.side-toggle').click(function (){
-      $('.side-bar').toggleClass('mini');
-      $('.main-page').toggleClass('extend');
-    })
-  }
+  mounted: function () {
+    $(".side-toggle").click(function () {
+      $(".side-bar").toggleClass("mini");
+      $(".main-page").toggleClass("extend");
+    });
+  },
 };
 </script>
 
@@ -45,8 +45,8 @@ export default {
   float: right;
   width: 87%;
   overflow: hidden;
-  transition: all .25s ease-in-out;
-  .header{
+  transition: all 0.25s ease-in-out;
+  .header {
     position: fixed;
     z-index: 1;
     width: 87%;
@@ -57,13 +57,13 @@ export default {
     background-color: #ddd;
     padding: 8px 15px;
     border-bottom: 1px solid #ccc;
-    .side-toggle{
+    .side-toggle {
       width: 2.5%;
-      margin: 13px 2% 0 .5%;
+      margin: 13px 2% 0 0.5%;
       float: left;
       font-size: 30px;
       cursor: pointer;
-      &:hover{
+      &:hover {
         color: $main-color;
       }
     }
@@ -145,17 +145,17 @@ export default {
     border-bottom: none;
     position: inherit;
     // margin-top: 250px;
-    h4{
+    h4 {
       margin: 10px 0;
       text-transform: capitalize;
-      span{
+      span {
         color: $main-color;
       }
     }
   }
-  &.extend{
+  &.extend {
     width: 95%;
-    .header{
+    .header {
       width: 95%;
     }
   }

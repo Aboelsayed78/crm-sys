@@ -45,7 +45,12 @@
               <label for="phone"><b>phone</b></label>
               <input type="number" name="phone" placeholder="Patient Phone" />
               <label for="address"><b>address</b></label>
-              <input type="text" class="patient-address" name="address" placeholder="Patient Address" />
+              <input
+                type="text"
+                class="patient-address"
+                name="address"
+                placeholder="Patient Address"
+              />
             </form>
           </div>
 
@@ -92,7 +97,7 @@
           <div class="data-files">
             <div class="files-head">
               <span>ticket files</span>
-              <input type="file" name="" id="file-up">
+              <input type="file" name="" id="file-up" />
               <label for="file-up">upload a file</label>
             </div>
           </div>
@@ -249,7 +254,7 @@ export default {
             input {
               width: 30%;
               margin: 5px 2.5%;
-              &.patient-address{
+              &.patient-address {
                 width: 80%;
               }
             }
@@ -287,9 +292,9 @@ export default {
         padding: 10px 40px;
         text-align: left;
         margin: 10px 0;
-        .files-head{
+        .files-head {
           overflow: hidden;
-          span{
+          span {
             float: left;
             font-size: 21px;
             font-weight: bold;
@@ -298,10 +303,10 @@ export default {
             color: #555;
             border-bottom: 2px solid $main-color;
           }
-          input{
+          input {
             display: none;
           }
-          label{
+          label {
             float: right;
             text-transform: capitalize;
             padding: 10px;

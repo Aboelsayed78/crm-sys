@@ -2,7 +2,9 @@
   <div class="doctors">
     <div class="controls">
       <div class="filter"></div>
-      <button onclick="document.getElementById('new-doctor').style.display='block'">
+      <button
+        onclick="document.getElementById('new-doctor').style.display='block'"
+      >
         <font-awesome-icon icon="user-plus" />
         <span>new doctor</span>
       </button>
@@ -65,7 +67,7 @@ export default {
       font-size: 20px;
       text-transform: capitalize;
       padding: 10px 0;
-      svg{
+      svg {
         margin-right: 10px;
         font-size: 22px;
       }

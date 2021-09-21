@@ -1,7 +1,7 @@
 <template>
-  <div class='demo-app'>
-    <div class='demo-app-sidebar'>
-      <div class='demo-app-sidebar-section'>
+  <div class="demo-app">
+    <div class="demo-app-sidebar">
+      <div class="demo-app-sidebar-section">
         <h2>Instructions</h2>
         <ul>
           <li>Select dates and you will be prompted to create a new event</li>
@@ -9,32 +9,29 @@
           <li>Click an event to delete it</li>
         </ul>
       </div>
-      <div class='demo-app-sidebar-section'>
+      <div class="demo-app-sidebar-section">
         <label>
           <input
-            type='checkbox'
-            :checked='calendarOptions.weekends'
-            @change='handleWeekendsToggle'
+            type="checkbox"
+            :checked="calendarOptions.weekends"
+            @change="handleWeekendsToggle"
           />
           toggle weekends
         </label>
       </div>
-      <div class='demo-app-sidebar-section'>
+      <div class="demo-app-sidebar-section">
         <h2>All Events ({{ currentEvents.length }})</h2>
         <ul>
-          <li v-for='event in currentEvents' :key='event.id'>
+          <li v-for="event in currentEvents" :key="event.id">
             <b>{{ event.startStr }}</b>
             <i>{{ event.title }}</i>
           </li>
         </ul>
       </div>
     </div>
-    <div class='demo-app-main'>
-      <FullCalendar
-        class='demo-app-calendar'
-        :options='calendarOptions'
-      >
-        <template v-slot:eventContent='arg'>
+    <div class="demo-app-main">
+      <FullCalendar class="demo-app-calendar" :options="calendarOptions">
+        <template v-slot:eventContent="arg">
           <b>{{ arg.timeText }}</b>
           <i>{{ arg.event.title }}</i>
         </template>
@@ -44,32 +41,31 @@
 </template>
 
 <script>
-import FullCalendar from '@fullcalendar/vue'
-import dayGridPlugin from '@fullcalendar/daygrid'
-import timeGridPlugin from '@fullcalendar/timegrid'
-import interactionPlugin from '@fullcalendar/interaction'
-import { INITIAL_EVENTS, createEventId } from '../assets/event-utils'
+import FullCalendar from "@fullcalendar/vue";
+import dayGridPlugin from "@fullcalendar/daygrid";
+import timeGridPlugin from "@fullcalendar/timegrid";
+import interactionPlugin from "@fullcalendar/interaction";
+import { INITIAL_EVENTS, createEventId } from "../assets/event-utils";
 
 export default {
-
   components: {
-    FullCalendar // make the <FullCalendar> tag available
+    FullCalendar, // make the <FullCalendar> tag available
   },
 
-  data: function() {
+  data: function () {
     return {
       calendarOptions: {
         plugins: [
           dayGridPlugin,
           timeGridPlugin,
-          interactionPlugin // needed for dateClick
+          interactionPlugin, // needed for dateClick
         ],
         headerToolbar: {
-          left: 'title',
-          center: 'dayGridMonth, timeGridWeek, timeGridDay',
-          right: 'prev today next'
+          left: "title",
+          center: "dayGridMonth, timeGridWeek, timeGridDay",
+          right: "prev today next",
         },
-        initialView: 'dayGridMonth',
+        initialView: "dayGridMonth",
         initialEvents: INITIAL_EVENTS, // alternatively, use the `events` setting to fetch from a feed
         editable: true,
         selectable: true,
@@ -78,28 +74,27 @@ export default {
         weekends: true,
         select: this.handleDateSelect,
         eventClick: this.handleEventClick,
-        eventsSet: this.handleEvents
+        eventsSet: this.handleEvents,
         /* you can update a remote database when these fire:
         eventAdd:
         eventChange:
         eventRemove:
         */
       },
-      currentEvents: []
-    }
+      currentEvents: [],
+    };
   },
 
   methods: {
-
     handleWeekendsToggle() {
-      this.calendarOptions.weekends = !this.calendarOptions.weekends // update a property
+      this.calendarOptions.weekends = !this.calendarOptions.weekends; // update a property
     },
 
     handleDateSelect(selectInfo) {
-      let title = prompt('Please enter a new title for your event')
-      let calendarApi = selectInfo.view.calendar
+      let title = prompt("Please enter a new title for your event");
+      let calendarApi = selectInfo.view.calendar;
 
-      calendarApi.unselect() // clear date selection
+      calendarApi.unselect(); // clear date selection
 
       if (title) {
         calendarApi.addEvent({
@@ -107,26 +102,29 @@ export default {
           title,
           start: selectInfo.startStr,
           end: selectInfo.endStr,
-          allDay: selectInfo.allDay
-        })
+          allDay: selectInfo.allDay,
+        });
       }
     },
 
     handleEventClick(clickInfo) {
-      if (confirm(`Are you sure you want to delete the event '${clickInfo.event.title}'`)) {
-        clickInfo.event.remove()
+      if (
+        confirm(
+          `Are you sure you want to delete the event '${clickInfo.event.title}'`
+        )
+      ) {
+        clickInfo.event.remove();
       }
     },
 
     handleEvents(events) {
-      this.currentEvents = events
-    }
-  }
-}
+      this.currentEvents = events;
+    },
+  },
+};
 </script>
 
-<style lang='css'>
-
+<style lang="css">
 h2 {
   margin: 0;
   font-size: 16px;
@@ -142,7 +140,8 @@ li {
   padding: 0;
 }
 
-b { /* used for event dates/times */
+b {
+  /* used for event dates/times */
   margin-right: 3px;
 }
 
@@ -171,9 +170,9 @@ b { /* used for event dates/times */
   padding: 3em;
 }
 
-.fc { /* the calendar root */
+.fc {
+  /* the calendar root */
   max-width: 1100px;
   margin: 0 auto;
 }
-
 </style>

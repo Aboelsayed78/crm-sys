@@ -39,7 +39,7 @@ library.add(
   faLock,
   faStar,
   faFileInvoice,
-  faImage,
+  faImage
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

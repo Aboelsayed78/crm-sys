@@ -44,12 +44,24 @@
             <div class="clear"></div>
           </div>
           <div class="tickets-contain">
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
           </div>
         </div>
         <div class="consults-tickets">
@@ -60,12 +72,24 @@
             <div class="clear"></div>
           </div>
           <div class="tickets-contain">
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
           </div>
         </div>
         <div class="surgeries-tickets">
@@ -76,12 +100,24 @@
             <div class="clear"></div>
           </div>
           <div class="tickets-contain">
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
-            <TicketComp onclick="document.getElementById('ticket-page').style.display='block'"/>
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
+            <TicketComp
+              onclick="document.getElementById('ticket-page').style.display='block'"
+            />
           </div>
         </div>
         <div class="clear"></div>
@@ -104,14 +140,30 @@
             <span class="address">address</span>
             <span class="email">email</span>
           </div>
-          <PatientComp onclick="document.getElementById('patient-page').style.display='block'"/>
-          <PatientComp onclick="document.getElementById('patient-page').style.display='block'"/>
-          <PatientComp onclick="document.getElementById('patient-page').style.display='block'"/>
-          <PatientComp onclick="document.getElementById('patient-page').style.display='block'"/>
-          <PatientComp onclick="document.getElementById('patient-page').style.display='block'"/>
-          <PatientComp onclick="document.getElementById('patient-page').style.display='block'"/>
-          <PatientComp onclick="document.getElementById('patient-page').style.display='block'"/>
-          <PatientComp onclick="document.getElementById('patient-page').style.display='block'"/>
+          <PatientComp
+            onclick="document.getElementById('patient-page').style.display='block'"
+          />
+          <PatientComp
+            onclick="document.getElementById('patient-page').style.display='block'"
+          />
+          <PatientComp
+            onclick="document.getElementById('patient-page').style.display='block'"
+          />
+          <PatientComp
+            onclick="document.getElementById('patient-page').style.display='block'"
+          />
+          <PatientComp
+            onclick="document.getElementById('patient-page').style.display='block'"
+          />
+          <PatientComp
+            onclick="document.getElementById('patient-page').style.display='block'"
+          />
+          <PatientComp
+            onclick="document.getElementById('patient-page').style.display='block'"
+          />
+          <PatientComp
+            onclick="document.getElementById('patient-page').style.display='block'"
+          />
         </div>
       </div>
     </div>
@@ -167,7 +219,7 @@ export default {
   .tickets-section,
   .patients-section,
   .doctors-section {
-      h1 {
+    h1 {
       text-align: left;
       margin: 20px 0;
       font-weight: bold;
@@ -200,18 +252,18 @@ export default {
           box-shadow: 1px 1px 4px 0px #999;
           padding: 3px 3px 3px 50px;
           color: #555;
-          .card-contain{
+          .card-contain {
             border-radius: 2px;
           }
         }
-        svg{
+        svg {
           position: absolute;
           top: 35%;
           left: 3%;
           color: #eee;
           font-size: 30px;
         }
-        .card-contain{
+        .card-contain {
           background-color: #eee;
           padding: 10px;
           height: 100%;
@@ -235,14 +287,14 @@ export default {
         &.doctors {
           // Doctors Number Card
           background-color: $doctors-color;
-          svg{
+          svg {
             left: 5%;
           }
         }
         &.patients {
           // Customer Number Card
           background-color: $patients-color;
-          svg{
+          svg {
             left: 5%;
           }
         }
@@ -522,7 +574,7 @@ export default {
           width: 25%;
           margin-bottom: 0;
           .doctor-panel {
-            button{
+            button {
               background-color: $main-color;
             }
           }

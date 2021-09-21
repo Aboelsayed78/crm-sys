@@ -16,7 +16,9 @@
         eaque eligendi tenetur quidem assumenda provident iusto ullam aut enim
         molestiae!
       </p>
-      <button onclick="document.getElementById('ticket-page').style.display='block'">
+      <button
+        onclick="document.getElementById('ticket-page').style.display='block'"
+      >
         view ticket
       </button>
       <div class="clear"></div>

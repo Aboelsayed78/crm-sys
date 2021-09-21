@@ -39,7 +39,12 @@
           <div class="data-row">
             <label for="address"><b>address</b></label>
             <span>alexandria</span>
-            <input type="text" name="address" class="vanish" value="alexandria" />
+            <input
+              type="text"
+              name="address"
+              class="vanish"
+              value="alexandria"
+            />
           </div>
 
           <div class="data-row">
@@ -67,13 +72,15 @@
           <div class="data-files">
             <div class="files-head">
               <span>patient files</span>
-              <input type="file" name="" id="file-up">
+              <input type="file" name="" id="file-up" />
               <label for="file-up">upload a file</label>
             </div>
           </div>
 
           <div class="modal-foot">
-            <button type="button" id="save-patient" class="vanish">save profile</button>
+            <button type="button" id="save-patient" class="vanish">
+              save profile
+            </button>
             <button type="button" id="edit-patient">edit profile</button>
           </div>
         </div>
@@ -169,10 +176,10 @@ export default {
           box-shadow: 1px 1px 5px 0 #999;
           margin-bottom: 20px;
         }
-        #img-up{
+        #img-up {
           display: none;
         }
-        label{
+        label {
           position: absolute;
           top: 0;
           right: 0;
@@ -182,15 +189,15 @@ export default {
           border-radius: 50%;
           display: none;
           cursor: pointer;
-          svg{
+          svg {
             font-size: 45px;
             margin: 95px;
             display: block;
             color: #ddd;
           }
         }
-        &:hover{
-          label{
+        &:hover {
+          label {
             display: inline-block;
           }
         }
@@ -234,9 +241,9 @@ export default {
         padding: 10px 40px;
         text-align: left;
         margin: 10px 0;
-        .files-head{
+        .files-head {
           overflow: hidden;
-          span{
+          span {
             float: left;
             font-size: 21px;
             font-weight: bold;
@@ -245,10 +252,10 @@ export default {
             color: #555;
             border-bottom: 2px solid $main-color;
           }
-          input{
+          input {
             display: none;
           }
-          label{
+          label {
             float: right;
             text-transform: capitalize;
             padding: 10px;
