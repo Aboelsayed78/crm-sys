@@ -1,3 +1,5 @@
 module.exports = {
-  publicPath: "crm-sys-repo",
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/crm-sys-repo/'
+    : '/'
 };
