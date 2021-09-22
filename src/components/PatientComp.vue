@@ -162,7 +162,7 @@ export default {
         position: relative;
         .tickets-title {
           text-transform: capitalize;
-          background-color: #42b983;
+          background-color: $main-color;
           padding: 5px 5px 5px 5px;
           color: #fff;
           font-size: 18px;
@@ -230,7 +230,7 @@ export default {
     button {
       width: 14%;
       border: none;
-      background-color: #42b983;
+      background-color: $main-color;
       border-radius: 0px 3px 3px 0px;
       color: #fff;
       float: right;

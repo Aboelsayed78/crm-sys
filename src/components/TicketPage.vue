@@ -305,9 +305,6 @@ export default {
           color: #eee;
           border-radius: 0 0 20px 20px;
           transition: all 0.3s ease-in-out;
-          &:hover {
-            background-color: #1d975e;
-          }
         }
       }
       .vanish {

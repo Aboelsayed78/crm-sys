@@ -99,7 +99,7 @@ export default {
     button {
       width: 13%;
       border: none;
-      background-color: #42b983;
+      background-color: $main-color;
       border-radius: 3px;
       color: #fff;
       float: right;
