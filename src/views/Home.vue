@@ -6,29 +6,29 @@
         <div class="card active">
           <font-awesome-icon icon="ticket-alt" />
           <div class="card-contain">
-            <span class="num-active">400</span>
+            <span class="num-active">55</span>
             Active
           </div>
         </div>
         <div class="card finished">
           <font-awesome-icon icon="ticket-alt" />
           <div class="card-contain">
-            <span class="num-finished">400</span>
+            <span class="num-finished">75</span>
             Finished
           </div>
         </div>
         <div class="card patients">
           <font-awesome-icon icon="user" />
           <div class="card-contain">
-            <span class="num-patients">400</span>
+            <span class="num-patients">158</span>
             Patients
           </div>
         </div>
-        <div class="card doctors">
-          <font-awesome-icon icon="user-md" />
+        <div class="card revenue">
+          <font-awesome-icon icon="coins" />
           <div class="card-contain">
-            <span class="num-doctors">400</span>
-            Doctors
+            <span class="num-revenue">4350 LE</span>
+            This Month
           </div>
         </div>
       </div>
@@ -248,6 +248,7 @@ export default {
         font-size: 20px;
         font-weight: 400;
         position: relative;
+        background-color: $main-color;
         &:hover {
           box-shadow: 1px 1px 4px 0px #999;
           padding: 3px 3px 3px 50px;
@@ -256,6 +257,16 @@ export default {
             border-radius: 2px;
           }
         }
+        .card-contain {
+          background-color: #eee;
+          padding: 10px;
+          height: 100%;
+        }
+        span {
+          display: block;
+          font-weight: bold;
+          font-size: 30px;
+        }
         svg {
           position: absolute;
           top: 35%;
@@ -263,37 +274,12 @@ export default {
           color: #eee;
           font-size: 30px;
         }
-        .card-contain {
-          background-color: #eee;
-          padding: 10px;
-          height: 100%;
-        }
-        &.active,
-        &.finished,
-        &.doctors,
-        &.patients {
-          // Active, Finished, Late, patients Tickets Card
-          background-color: $main-color;
-          span {
-            display: block;
-            font-weight: bold;
-            font-size: 30px;
-          }
-        }
-        &.finished {
-          // Finished Tickets Card
-          background-color: $finish-color;
-        }
-        &.doctors {
-          // Doctors Number Card
-          background-color: $doctors-color;
+        &.revenue {
           svg {
-            left: 5%;
+            left: 4%;
           }
         }
         &.patients {
-          // Customer Number Card
-          background-color: $patients-color;
           svg {
             left: 5%;
           }

@@ -132,7 +132,7 @@ h2 {
 
 ul {
   margin: 0;
-  padding: 0 0 0 1.5em;
+  padding-left: 18px;
 }
 
 li {
@@ -159,10 +159,11 @@ b {
   background: #eaf9ff;
   border-right: 1px solid #d3e2e8;
   text-align: left;
+  display: none;
 }
 
 .demo-app-sidebar-section {
-  padding: 2em;
+  padding: 15px;
 }
 
 .demo-app-main {
@@ -175,4 +176,12 @@ b {
   max-width: 1100px;
   margin: 0 auto;
 }
+/* .fc .fc-daygrid-body, */
+/* .fc-col-header, */
+/* .fc-daygrid-body, */
+/* .fc-daygrid-body-balanced,  */
+/* .fc .fc-scrollgrid-section-body table, */
+/* .fc .fc-scrollgrid-section-footer table{
+  width: 100% !important;
+} */
 </style>

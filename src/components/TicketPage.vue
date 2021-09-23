@@ -23,9 +23,9 @@
             <span>Youssef Ahmed</span>
             <select name="patient-name" id="" class="vanish">
               <option value="">Select Patient</option>
-              <option value="youssef">Youssef Ahmed</option>
-              <option value="hazem">Hazem Soliman</option>
-              <option value="mohamed">Mohamed Elsayed</option>
+              <option value="youssef">Mohamed Ahmed</option>
+              <option value="hazem">Sara Zeyad</option>
+              <option value="mohamed">Ahmed Elsayed</option>
             </select>
           </div>
 

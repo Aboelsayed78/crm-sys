@@ -1,9 +1,8 @@
 <template>
   <div class="side-bar">
     <div class="logo">
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <span class="logo-title">Vue.js</span>
-      <div class="clear"></div>
+      <span class="logo-letter">k</span>
+      <span class="slogan">ayan</span>
     </div>
     <div class="pages">
       <ul>
@@ -71,21 +70,20 @@ export default {
   transition: all 0.25s ease-in-out;
   .logo {
     overflow: hidden;
-    padding: 15px 0;
-    height: 78px;
+    height: 77px;
     background-color: #636363;
-    img {
-      width: 50px;
-      float: left;
-      margin-left: 8px;
-    }
-    .logo-title {
-      float: right;
-      width: 55%;
-      font-size: 25px;
-      font-weight: bold;
-      margin: 5px 10px 0 0;
+    text-align: left;
+    .logo-letter {
+      text-transform: capitalize;
+      font-size: 48px;
       color: $main-color;
+      margin: 0 12px 0 6px;
+      font-family: "Pacifico", cursive;
+    }
+    .slogan {
+      font-size: 45px;
+      color: #fff;
+      font-family: "Courgette", cursive;
     }
   }
   .pages {
@@ -131,12 +129,7 @@ export default {
   &.mini {
     width: 5%;
     .logo {
-      img {
-        width: 50px;
-        float: left;
-        margin-left: 8px;
-      }
-      .logo-title {
+      .slogan {
         display: none;
       }
     }

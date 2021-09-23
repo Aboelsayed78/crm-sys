@@ -27,22 +27,27 @@
 
           <div class="data-row">
             <label for="name"><b>name</b></label>
-            <input type="text" name="name" placeholder="patient Name" />
+            <input type="text" name="name" placeholder="Name" />
+          </div>
+
+          <div class="data-row">
+            <label for="birth"><b>birth date</b></label>
+            <input type="date" name="birth" />
           </div>
 
           <div class="data-row">
             <label for="address"><b>address</b></label>
-            <input type="text" name="address" placeholder="patient Address" />
+            <input type="text" name="address" placeholder="Address" />
           </div>
 
           <div class="data-row">
             <label for="phone"><b>phone</b></label>
-            <input type="number" name="phone" placeholder="patient Phone" />
+            <input type="number" name="phone" placeholder="Phone" />
           </div>
 
           <div class="data-row">
             <label for="email"><b>email</b></label>
-            <input type="email" name="email" placeholder="patient Email" />
+            <input type="email" name="email" placeholder="Email" />
           </div>
 
           <div class="data-files">
@@ -228,9 +233,6 @@ export default {
           color: #fff;
           border-radius: 0 0 20px 20px;
           transition: all 0.3s ease-in-out;
-          &:hover {
-            background-color: #1d975e;
-          }
         }
       }
     }

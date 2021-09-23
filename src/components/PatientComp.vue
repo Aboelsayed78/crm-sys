@@ -2,7 +2,7 @@
   <div class="patient">
     <div class="patient-panel">
       <span class="patient-img"><img src="../assets/My-IMG.jpg" alt="" /></span>
-      <span class="patient">hazem soliman</span>
+      <span class="patient">ramy salem</span>
       <span class="phone">01015479215</span>
       <span class="address">alexandria</span>
       <span class="email">myemail49@yahoo.com</span>
@@ -61,8 +61,8 @@
         new ticket
       </button>
       <button
-        class="new-ticket"
-        onclick="document.getElementById('new-ticket').style.display='block'"
+        class="new-mail"
+        onclick="document.getElementById('new-mail').style.display='block'"
       >
         send email
       </button>
@@ -70,6 +70,7 @@
     </div>
     <TicketPage />
     <NewTicket />
+    <NewMail />
   </div>
 </template>
 
@@ -77,6 +78,7 @@
 import TicketComp from "./TicketComp.vue";
 import TicketPage from "./TicketPage.vue";
 import NewTicket from "./NewTicket.vue";
+import NewMail from "./NewMail.vue";
 export default {
   name: "patientComp",
   props: {},
@@ -84,6 +86,7 @@ export default {
     TicketComp,
     TicketPage,
     NewTicket,
+    NewMail,
   },
 };
 </script>
@@ -241,6 +244,11 @@ export default {
         width: 11.3%;
         border-right: 1px solid #fff;
         border-radius: 0;
+      }
+      &.new-mail {
+        width: 11.4%;
+        border-right: 1px solid #fff;
+        border-radius: 3px 0 0 3px;
       }
     }
   }

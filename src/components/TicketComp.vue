@@ -2,7 +2,7 @@
   <div class="ticket">
     <div class="ticket-panel">
       <span class="id">5419</span>
-      <span class="patient">yossef ahmed</span>
+      <span class="patient">ahmed samy</span>
       <span class="phone">01095486187</span>
       <span class="type">examine</span>
       <span class="status">active</span>
