@@ -1,14 +1,14 @@
 <template>
   <div class="patient">
     <div class="patient-panel">
-      <span class="patient-img"><img src="../assets/My-IMG.jpg" alt="" /></span>
-      <span class="patient">ramy salem</span>
-      <span class="phone">01015479215</span>
-      <span class="address">alexandria</span>
-      <span class="email">myemail49@yahoo.com</span>
-      <span class="active">1</span>
-      <span class="finish">4</span>
-      <span class="date">28-11-2021</span>
+      <span class="patient-img"><img v-bind:src="pic" alt="" /></span>
+      <span class="patient">{{name}}</span>
+      <span class="phone">{{phone}}</span>
+      <span class="address">{{address}}</span>
+      <span class="email">{{email}}</span>
+      <span class="active">{{active}}</span>
+      <span class="finish">{{finished}}</span>
+      <span class="date">{{joined}}</span>
     </div>
     <div class="patient-ext">
       <div class="patient-tickets">
@@ -81,7 +81,7 @@ import NewTicket from "./NewTicket.vue";
 import NewMail from "./NewMail.vue";
 export default {
   name: "patientComp",
-  props: {},
+  props: ["pic","name","phone","address","active","finished","joined","email"],
   components: {
     TicketComp,
     TicketPage,
@@ -118,7 +118,7 @@ export default {
           height: 50px;
           width: 85%;
           border-radius: 50%;
-          border: 1px solid $main-color;
+          // border: 1px solid $main-color;
         }
       }
       &.patient,
@@ -175,7 +175,7 @@ export default {
           position: absolute;
         }
         .tickets-contain {
-          background-color: #fff;
+          background-color: #eee;
           padding: 5px;
           border: 2px solid $main-color;
           border-radius: 0px 3px 3px 3px;

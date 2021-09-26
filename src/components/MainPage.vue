@@ -93,7 +93,7 @@ export default {
           border: none;
           background-color: $main-color;
           border-radius: 3px;
-          color: #eee;
+          color: #fff;
           float: right;
           font-size: 22px;
           text-transform: capitalize;
@@ -103,7 +103,7 @@ export default {
     }
     .user-badge {
       float: right;
-      width: 6%;
+      width: 15%;
       overflow: hidden;
       background-color: $main-color;
       padding: 4px;
@@ -119,24 +119,13 @@ export default {
         transition: all 0.75s ease-in-out;
       }
       span {
-        width: 0%;
+        width: 60%;
         float: right;
-        font-size: 0px;
+        font-size: 16px;
         font-weight: bold;
-        color: #eee;
-        margin: 0;
+        color: #fff;
+        margin: 9% 3% 0 3%;
         transition: all 0.75s ease-in-out;
-      }
-      &:hover {
-        width: 15%;
-        img {
-          transform: rotate(-360deg);
-        }
-        span {
-          width: 60%;
-          font-size: 16px;
-          margin: 9% 3% 0 3%;
-        }
       }
     }
   }

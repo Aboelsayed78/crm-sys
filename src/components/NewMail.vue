@@ -5,7 +5,7 @@
         <span
           onclick="document.getElementById('new-mail').style.display='none'"
           class="close"
-          title="Close Modal"
+          title="Close"
           >&times;</span
         >
         <div class="contain">
@@ -20,9 +20,7 @@
 
           <div class="mail-content">
             <h4>content</h4>
-            <textarea cols="15" rows="5">
-              Descripe Patient Status
-            </textarea>
+            <textarea cols="15" rows="5"></textarea>
           </div>
 
           <div class="modal-foot">
@@ -35,9 +33,7 @@
 </template>
 
 <script>
-export default {
-  
-}
+export default {};
 </script>
 
 <style lang="scss" scoped>

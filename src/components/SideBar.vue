@@ -75,13 +75,14 @@ export default {
     text-align: left;
     .logo-letter {
       text-transform: capitalize;
-      font-size: 48px;
+      font-size: 50px;
       color: $main-color;
-      margin: 0 12px 0 6px;
+      margin: 0 15px 0 10px;
+      transition: all 0.25s ease-in-out;
       font-family: "Pacifico", cursive;
     }
     .slogan {
-      font-size: 45px;
+      font-size: 40px;
       color: #fff;
       font-family: "Courgette", cursive;
     }
@@ -129,6 +130,9 @@ export default {
   &.mini {
     width: 5%;
     .logo {
+      .logo-letter {
+        font-size: 42px;
+      }
       .slogan {
         display: none;
       }

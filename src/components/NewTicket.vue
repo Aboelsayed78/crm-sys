@@ -5,7 +5,7 @@
         <span
           onclick="document.getElementById('new-ticket').style.display='none'"
           class="close"
-          title="Close Modal"
+          title="Close"
           >&times;</span
         >
         <div class="contain">
@@ -54,10 +54,10 @@
             </form>
           </div>
 
-          <div class="data-row">
+          <!-- <div class="data-row">
             <label for="phone"><b>phone</b></label>
             <span></span>
-          </div>
+          </div> -->
 
           <div class="data-row">
             <label for="reserved"><b>reserved at</b></label>

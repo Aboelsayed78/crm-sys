@@ -5,7 +5,7 @@
         <span
           onclick="document.getElementById('patient-page').style.display='none'"
           class="close"
-          title="Close Modal"
+          title="Close"
           >&times;</span
         >
         <div class="contain">
@@ -13,7 +13,7 @@
             <span>patient page</span>
           </div>
           <div class="patient-img">
-            <img src="../assets/My-IMG.jpg" alt="patient-Img" />
+            <img v-bind:src="pic" alt="patient-Img" />
             <input type="file" id="img-up" />
             <label for="img-up" class="vanish">
               <font-awesome-icon icon="image" />
@@ -22,12 +22,12 @@
 
           <div class="data-row">
             <label for="id"><b>patient ID</b></label>
-            <span>4868</span>
+            <span>{{id}}</span>
           </div>
 
           <div class="data-row">
             <label for="name"><b>name</b></label>
-            <span>asmaa mohamed</span>
+            <span>{{name}}</span>
             <input
               type="text"
               name="name"
@@ -37,8 +37,19 @@
           </div>
 
           <div class="data-row">
+            <label for="birth"><b>birth date</b></label>
+            <span>{{birth}}</span>
+            <input type="date" name="birth" class="vanish"/>
+          </div>
+
+          <div class="data-row">
+            <label for="gender"><b>gender</b></label>
+            <span>{{gender}}</span>
+          </div>
+
+          <div class="data-row">
             <label for="address"><b>address</b></label>
-            <span>alexandria</span>
+            <span>{{address}}</span>
             <input
               type="text"
               name="address"
@@ -49,7 +60,7 @@
 
           <div class="data-row">
             <label for="phone"><b>phone</b></label>
-            <span>01254987646</span>
+            <span>{{phone}}</span>
             <input
               type="number"
               name="phone"
@@ -60,7 +71,7 @@
 
           <div class="data-row">
             <label for="email"><b>email</b></label>
-            <span>myemail49@yahoo.com</span>
+            <span>{{email}}</span>
             <input
               type="email"
               name="email"
@@ -93,13 +104,13 @@
 import $ from "jquery";
 export default {
   name: "patientPage",
-  props: {},
+  props: ["id","pic","name","birth","gender","phone","address","active","finished","joined","email"],
   components: {},
   mounted: function () {
     $("#edit-patient").click(function () {
       $("#save-patient").removeClass("vanish");
 
-      $(".modal-patient-page .patient-img input.vanish").removeClass("vanish");
+      $(".modal-patient-page .patient-img label.vanish").removeClass("vanish");
 
       $(".modal-patient-page .data-row input.vanish").removeClass("vanish");
 
@@ -109,7 +120,7 @@ export default {
     $("#save-patient").click(function () {
       $("#edit-patient").removeClass("vanish");
 
-      $(".modal-patient-page .patient-img input").addClass("vanish");
+      $(".modal-patient-page .patient-img label").addClass("vanish");
 
       $(".modal-patient-page .data-row input").addClass("vanish");
 
@@ -165,7 +176,7 @@ export default {
         }
       }
       .patient-img {
-        width: 25%;
+        width: 20%;
         margin: 30px auto;
         text-align: center;
         position: relative;
@@ -187,18 +198,12 @@ export default {
           bottom: 20px;
           background-color: #0005;
           border-radius: 50%;
-          display: none;
           cursor: pointer;
           svg {
-            font-size: 45px;
-            margin: 95px;
+            font-size: 35px;
+            margin: 75px;
             display: block;
             color: #ddd;
-          }
-        }
-        &:hover {
-          label {
-            display: inline-block;
           }
         }
       }

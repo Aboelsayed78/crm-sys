@@ -27,7 +27,7 @@
         <div class="card revenue">
           <font-awesome-icon icon="coins" />
           <div class="card-contain">
-            <span class="num-revenue">4350 LE</span>
+            <span class="num-revenue">5500 LE</span>
             This Month
           </div>
         </div>
@@ -141,49 +141,18 @@
             <span class="email">email</span>
           </div>
           <PatientComp
-            onclick="document.getElementById('patient-page').style.display='block'"
+            v-for="patient in patients"
+            :key="patient.id"
+            :pic="patient.pic"
+            :name="patient.name"
+            :phone="patient.phone"
+            :address="patient.address"
+            :email="patient.email"
           />
-          <PatientComp
-            onclick="document.getElementById('patient-page').style.display='block'"
-          />
-          <PatientComp
-            onclick="document.getElementById('patient-page').style.display='block'"
-          />
-          <PatientComp
-            onclick="document.getElementById('patient-page').style.display='block'"
-          />
-          <PatientComp
-            onclick="document.getElementById('patient-page').style.display='block'"
-          />
-          <PatientComp
-            onclick="document.getElementById('patient-page').style.display='block'"
-          />
-          <PatientComp
-            onclick="document.getElementById('patient-page').style.display='block'"
-          />
-          <PatientComp
-            onclick="document.getElementById('patient-page').style.display='block'"
-          />
+          
         </div>
       </div>
     </div>
-    <!-- <hr />
-    <div class="doctors-section">
-      <div class="all-doctors">
-        <div class="h4s">
-          <div class="left"><h4>left</h4></div>
-          <div class="center"><h4>our doctors</h4></div>
-          <div class="right"><h4>right</h4></div>
-          <div class="clear"></div>
-        </div>
-        <div class="doctors-contain">
-          <DoctorComp />
-          <DoctorComp />
-          <DoctorComp />
-          <DoctorComp />
-        </div>
-      </div>
-    </div> -->
     <TicketPage />
     <!-- <PatientPage /> -->
   </div>
@@ -194,18 +163,20 @@
 // import $ from "jquery";
 import TicketComp from "../components/TicketComp.vue";
 import PatientComp from "../components/PatientComp.vue";
-// import DoctorComp from "../components/DoctorComp.vue";
 import TicketPage from "../components/TicketPage.vue";
-// import PatientPage from "../components/PatientPage.vue";
-// import DoctorPage from "../components/DoctorPage.vue";
+import patientsData from "../json/Patients_Data.json";
 export default {
+  data: function () {
+    return {
+      patients: patientsData,
+    };
+  },
   name: "Home",
   props: {},
   components: {
     TicketComp,
     PatientComp,
     TicketPage,
-    // PatientPage,
   },
 };
 </script>
@@ -464,28 +435,28 @@ export default {
             line-height: 2.4;
             border-right-color: $main-color;
             &.patient-img {
-              width: 10%;
+              width: 8%;
               border-left: none;
               line-height: 2.4;
+              padding: 0 1%;
               img {
-                width: 80%;
+                width: 100%;
                 border-color: $main-color;
                 border-radius: 50%;
               }
             }
             &.patient,
-            &.email,
             &.phone {
               display: inline-block;
-              width: 24%;
+              width: 22%;
             }
-            &.active,
-            &.finish,
-            &.date,
             &.address {
               width: 18%;
             }
             &.email {
+              width: 30%;
+              padding: 0 1%;
+              display: inline-block;
               border-right: none;
               text-transform: lowercase;
             }

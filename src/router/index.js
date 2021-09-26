@@ -14,31 +14,49 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    meta: {
+      title: "Home",
+    },
   },
   {
     path: "/tickets",
     name: "Tickets",
     component: Tickets,
+    meta: {
+      title: "Tickets",
+    },
   },
   {
     path: "/patients",
     name: "Patients",
     component: Patients,
+    meta: {
+      title: "Patients",
+    },
   },
   // {
   //   path: "/doctors",
   //   name: "Doctors",
   //   component: Doctors,
+  //   meta: {
+  //     title: "Doctors",
+  //   },
   // },
   {
     path: "/reports",
     name: "Reports",
     component: Reports,
+    meta: {
+      title: "Reports",
+    },
   },
   {
     path: "/calendar",
     name: "Calendar",
     component: Calendar,
+    meta: {
+      title: "Calendar",
+    },
   },
 ];
 
@@ -46,6 +64,11 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  document.title = `${to.meta.title}`;
+  next();
 });
 
 export default router;

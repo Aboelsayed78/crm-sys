@@ -21,16 +21,33 @@
           <span class="finish">finished</span>
           <span class="date">date</span>
         </div>
-        <PatientComp />
-        <PatientComp />
-        <PatientComp />
-        <PatientComp />
-        <PatientComp />
-        <PatientComp />
-        <PatientComp />
-        <PatientComp />
+
+        <PatientComp
+          v-for="patient in patients"
+          :key="patient.id"
+          :pic="patient.pic"
+          :name="patient.name"
+          :phone="patient.phone"
+          :address="patient.address"
+          :active="patient.active"
+          :finished="patient.finished"
+          :joined="patient.joined"
+          :email="patient.email"
+        />
       </div>
-      <PatientPage />
+      <PatientPage
+        v-for="patient in patients"
+        :key="patient.id"
+        :id="patient.id"
+        :pic="patient.pic"
+        :name="patient.name"
+        :birth="patient.birth"
+        :gender="patient.gender"
+        :address="patient.address"
+        :phone="patient.phone"
+        :joined="patient.joined"
+        :email="patient.email" 
+      />
       <NewPatient />
     </div>
   </div>
@@ -41,7 +58,13 @@ import $ from "jquery";
 import PatientComp from "../components/PatientComp.vue";
 import PatientPage from "../components/PatientPage.vue";
 import NewPatient from "../components/NewPatient.vue";
+import patientsData from "../json/Patients_Data.json";
 export default {
+  data: function () {
+    return {
+      patients: patientsData,
+    };
+  },
   name: "patients",
   props: {},
   components: {

@@ -5,7 +5,7 @@
         <span
           onclick="document.getElementById('ticket-page').style.display='none'"
           class="close"
-          title="Close Modal"
+          title="Close"
           >&times;</span
         >
         <div class="contain">

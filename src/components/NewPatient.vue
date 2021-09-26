@@ -5,7 +5,7 @@
         <span
           onclick="document.getElementById('new-patient').style.display='none'"
           class="close"
-          title="Close Modal"
+          title="Close"
           >&times;</span
         >
         <div class="contain">
@@ -33,6 +33,14 @@
           <div class="data-row">
             <label for="birth"><b>birth date</b></label>
             <input type="date" name="birth" />
+          </div>
+
+          <div class="data-row">
+            <label for="gender"><b>gender</b></label>
+            <select name="" id="">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
           </div>
 
           <div class="data-row">
@@ -122,7 +130,7 @@ export default {
         }
       }
       .patient-img {
-        width: 25%;
+        width: 20%;
         margin: 30px auto;
         text-align: center;
         position: relative;
@@ -144,18 +152,12 @@ export default {
           bottom: 20px;
           background-color: #0005;
           border-radius: 50%;
-          display: none;
           cursor: pointer;
           svg {
-            font-size: 45px;
-            margin: 95px;
+            font-size: 35px;
+            margin: 75px;
             display: block;
             color: #ddd;
-          }
-        }
-        &:hover {
-          label {
-            display: inline-block;
           }
         }
       }
@@ -178,7 +180,7 @@ export default {
           text-transform: capitalize;
           margin-right: 5%;
         }
-        input {
+        input, select {
           padding: 5px;
           width: 35%;
           font-size: 16px;
