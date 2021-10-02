@@ -30,9 +30,5 @@ npm run lint
 vue ui
 ```
 
-```
-"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"
-```
-
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

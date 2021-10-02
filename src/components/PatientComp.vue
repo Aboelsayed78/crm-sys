@@ -2,13 +2,13 @@
   <div class="patient">
     <div class="patient-panel">
       <span class="patient-img"><img v-bind:src="pic" alt="" /></span>
-      <span class="patient">{{name}}</span>
-      <span class="phone">{{phone}}</span>
-      <span class="address">{{address}}</span>
-      <span class="email">{{email}}</span>
-      <span class="active">{{active}}</span>
-      <span class="finish">{{finished}}</span>
-      <span class="date">{{joined}}</span>
+      <span class="patient">{{ name }}</span>
+      <span class="phone">{{ phone }}</span>
+      <span class="address">{{ address }}</span>
+      <span class="email">{{ email }}</span>
+      <span class="active">{{ active }}</span>
+      <span class="finish">{{ finished }}</span>
+      <span class="date">{{ joined }}</span>
     </div>
     <div class="patient-ext">
       <div class="patient-tickets">
@@ -17,15 +17,10 @@
           <div class="tickets-contain">
             <TicketComp
               onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
+              v-for="patient in patients"
+              :key="patient.id"
+              :id="patient.id"
+              :name="patient.name"
             />
           </div>
         </div>
@@ -34,15 +29,10 @@
           <div class="tickets-contain">
             <TicketComp
               onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
+              v-for="patient in patients"
+              :key="patient.id"
+              :id="patient.id"
+              :name="patient.name"
             />
           </div>
         </div>
@@ -68,7 +58,17 @@
       </button>
       <div class="clear"></div>
     </div>
-    <TicketPage />
+    <TicketPage
+      v-for="patient in patients"
+      :key="patient.id"
+      :id="patient.id"
+      :name="patient.name"
+      :phone="patient.phone"
+      :joined="patient.joined"
+      :birth="patient.birth"
+      :status="patient.status"
+      :type="patient.type"
+    />
     <NewTicket />
     <NewMail />
   </div>
@@ -79,9 +79,24 @@ import TicketComp from "./TicketComp.vue";
 import TicketPage from "./TicketPage.vue";
 import NewTicket from "./NewTicket.vue";
 import NewMail from "./NewMail.vue";
+import patientsData from "../json/Patients_Data.json";
 export default {
+  data: function () {
+    return {
+      patients: patientsData,
+    };
+  },
   name: "patientComp",
-  props: ["pic","name","phone","address","active","finished","joined","email"],
+  props: [
+    "pic",
+    "name",
+    "phone",
+    "address",
+    "active",
+    "finished",
+    "joined",
+    "email",
+  ],
   components: {
     TicketComp,
     TicketPage,
@@ -177,6 +192,8 @@ export default {
         .tickets-contain {
           background-color: #eee;
           padding: 5px;
+          height: 200px;
+          overflow: auto;
           border: 2px solid $main-color;
           border-radius: 0px 3px 3px 3px;
           box-shadow: 1px 1px 5px 0px #999;
@@ -197,28 +214,28 @@ export default {
                 font-size: 18px;
                 border-right-color: $main-color;
                 &.id {
-                  width: 15%;
+                  width: 20%;
                   text-align: center;
                   background-color: $main-color;
                   color: #fff;
-                  margin-right: 5%;
+                  margin-right: 15%;
                   border-radius: 3px;
                   border-right: none;
                 }
                 &.patient {
-                  width: 50%;
-                  margin-right: 5%;
+                  width: 65%;
+                  margin-right: 0;
+                  border-right: none;
                   text-transform: capitalize;
                 }
                 &.appoint {
                   width: 25%;
                   margin-right: 0;
-                  border-right: none;
                 }
                 &.status,
                 &.type,
-                &.phone,
-                &.email {
+                &.appoint,
+                &.phone {
                   display: none;
                 }
               }

@@ -46,7 +46,7 @@
         :address="patient.address"
         :phone="patient.phone"
         :joined="patient.joined"
-        :email="patient.email" 
+        :email="patient.email"
       />
       <NewPatient />
     </div>

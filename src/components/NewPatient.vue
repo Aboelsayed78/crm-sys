@@ -180,7 +180,8 @@ export default {
           text-transform: capitalize;
           margin-right: 5%;
         }
-        input, select {
+        input,
+        select {
           padding: 5px;
           width: 35%;
           font-size: 16px;

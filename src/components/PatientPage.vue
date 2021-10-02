@@ -22,12 +22,12 @@
 
           <div class="data-row">
             <label for="id"><b>patient ID</b></label>
-            <span>{{id}}</span>
+            <span>{{ id }}</span>
           </div>
 
           <div class="data-row">
             <label for="name"><b>name</b></label>
-            <span>{{name}}</span>
+            <span>{{ name }}</span>
             <input
               type="text"
               name="name"
@@ -38,18 +38,18 @@
 
           <div class="data-row">
             <label for="birth"><b>birth date</b></label>
-            <span>{{birth}}</span>
-            <input type="date" name="birth" class="vanish"/>
+            <span>{{ birth }}</span>
+            <input type="date" name="birth" class="vanish" />
           </div>
 
           <div class="data-row">
             <label for="gender"><b>gender</b></label>
-            <span>{{gender}}</span>
+            <span>{{ gender }}</span>
           </div>
 
           <div class="data-row">
             <label for="address"><b>address</b></label>
-            <span>{{address}}</span>
+            <span>{{ address }}</span>
             <input
               type="text"
               name="address"
@@ -60,7 +60,7 @@
 
           <div class="data-row">
             <label for="phone"><b>phone</b></label>
-            <span>{{phone}}</span>
+            <span>{{ phone }}</span>
             <input
               type="number"
               name="phone"
@@ -71,7 +71,7 @@
 
           <div class="data-row">
             <label for="email"><b>email</b></label>
-            <span>{{email}}</span>
+            <span>{{ email }}</span>
             <input
               type="email"
               name="email"
@@ -104,7 +104,19 @@
 import $ from "jquery";
 export default {
   name: "patientPage",
-  props: ["id","pic","name","birth","gender","phone","address","active","finished","joined","email"],
+  props: [
+    "id",
+    "pic",
+    "name",
+    "birth",
+    "gender",
+    "phone",
+    "address",
+    "active",
+    "finished",
+    "joined",
+    "email",
+  ],
   components: {},
   mounted: function () {
     $("#edit-patient").click(function () {

@@ -15,12 +15,12 @@
 
           <div class="data-row">
             <label for="id"><b>ticket ID</b></label>
-            <span>5149</span>
+            <span>{{id}}</span>
           </div>
 
           <div class="data-row">
             <label for="name"><b>name</b></label>
-            <span>Youssef Ahmed</span>
+            <span>{{name}}</span>
             <select name="patient-name" id="" class="vanish">
               <option value="">Select Patient</option>
               <option value="youssef">Mohamed Ahmed</option>
@@ -31,24 +31,24 @@
 
           <div class="data-row">
             <label for="phone"><b>phone</b></label>
-            <span>01095486187</span>
+            <span>{{phone}}</span>
           </div>
 
           <div class="data-row">
             <label for="reserved"><b>reserved at</b></label>
-            <span>23/10/2021</span>
+            <span>{{birth}}</span>
             <input type="date" name="reserved" class="vanish" />
           </div>
 
           <div class="data-row">
             <label for="appointment"><b>appointment</b></label>
-            <span>29/10/2021</span>
+            <span>{{joined}}</span>
             <input type="date" name="appointment" class="vanish" />
           </div>
 
           <div class="data-row">
             <label for="status"><b>status</b></label>
-            <span>active</span>
+            <span>{{status}}</span>
             <select name="status" id="" class="vanish">
               <option value="active">Active</option>
               <option value="finished">Finished</option>
@@ -57,7 +57,7 @@
 
           <div class="data-row">
             <label for="type"><b>type</b></label>
-            <span>examine</span>
+            <span>{{type}}</span>
             <select name="type" id="" class="vanish">
               <option value="">Select Type</option>
               <option value="examine">Examine</option>
@@ -106,7 +106,15 @@
 import $ from "jquery";
 export default {
   name: "TicketPage",
-  props: {},
+  props: [
+    "id",
+    "name",
+    "phone",
+    "status",
+    "type",
+    "joined",
+    "birth",
+  ],
   components: {},
   mounted: function () {
     $("#edit-ticket").click(function () {

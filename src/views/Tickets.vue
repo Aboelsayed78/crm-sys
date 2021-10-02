@@ -20,16 +20,28 @@
           <span class="status">status</span>
           <span class="appoint">appointment</span>
         </div>
-        <TicketComp />
-        <TicketComp />
-        <TicketComp />
-        <TicketComp />
-        <TicketComp />
-        <TicketComp />
-        <TicketComp />
-        <TicketComp />
+        <TicketComp
+          v-for="patient in patients"
+          :key="patient.id"
+          :id="patient.id"
+          :name="patient.name"
+          :phone="patient.phone"
+          :joined="patient.joined"
+          :status="patient.status"
+          :type="patient.type"
+        />
       </div>
-      <TicketPage />
+      <TicketPage
+        v-for="patient in patients"
+        :key="patient.id"
+        :id="patient.id"
+        :name="patient.name"
+        :phone="patient.phone"
+        :joined="patient.joined"
+        :birth="patient.birth"
+        :status="patient.status"
+        :type="patient.type"
+      />
       <NewTicket />
     </div>
   </div>
@@ -40,7 +52,13 @@ import $ from "jquery";
 import TicketComp from "../components/TicketComp.vue";
 import TicketPage from "../components/TicketPage.vue";
 import NewTicket from "../components/NewTicket.vue";
+import patientsData from "../json/Patients_Data.json";
 export default {
+  data: function (){
+    return {
+      patients: patientsData,
+    };
+  },
   name: "Tickets",
   props: {},
   components: {

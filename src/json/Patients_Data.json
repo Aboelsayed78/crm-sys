@@ -10,7 +10,9 @@
     "joined": "15/04/2021",
     "pic": "https://robohash.org/quidemexplicaboomnis.jpg?size=180x180&set=set1",
     "active": 1,
-    "finished": 12
+    "finished": 12,
+    "status": "finished",
+    "type": "consult"
   },
   {
     "id": 5254,
@@ -23,7 +25,9 @@
     "joined": "11/08/2021",
     "pic": "https://robohash.org/vitaesaepein.jpg?size=180x180&set=set1",
     "active": 4,
-    "finished": 15
+    "finished": 15,
+    "status": "active",
+    "type": "examine"
   },
   {
     "id": 7849,
@@ -36,7 +40,9 @@
     "joined": "26/10/2020",
     "pic": "https://robohash.org/aperiameligendiautem.jpg?size=180x180&set=set1",
     "active": 4,
-    "finished": 15
+    "finished": 15,
+    "status": "finished",
+    "type": "consult"
   },
   {
     "id": 3866,
@@ -49,7 +55,9 @@
     "joined": "09/12/2020",
     "pic": "https://robohash.org/dolorematdolor.jpg?size=180x180&set=set1",
     "active": 4,
-    "finished": 14
+    "finished": 14,
+    "status": "active",
+    "type": "surgery"
   },
   {
     "id": 4939,
@@ -62,7 +70,9 @@
     "joined": "04/04/2021",
     "pic": "https://robohash.org/magnivoluptasquis.jpg?size=180x180&set=set1",
     "active": 5,
-    "finished": 6
+    "finished": 6,
+    "status": "active",
+    "type": "examine"
   },
   {
     "id": 1962,
@@ -75,7 +85,9 @@
     "joined": "12/10/2020",
     "pic": "https://robohash.org/hicutid.jpg?size=180x180&set=set1",
     "active": 2,
-    "finished": 14
+    "finished": 14,
+    "status": "finished",
+    "type": "consult"
   },
   {
     "id": 3045,
@@ -88,7 +100,9 @@
     "joined": "16/03/2021",
     "pic": "https://robohash.org/temporibusullamvoluptatum.jpg?size=180x180&set=set1",
     "active": 4,
-    "finished": 12
+    "finished": 12,
+    "status": "active",
+    "type": "consult"
   },
   {
     "id": 2444,
@@ -101,7 +115,9 @@
     "joined": "14/02/2021",
     "pic": "https://robohash.org/etculpaofficia.jpg?size=180x180&set=set1",
     "active": 1,
-    "finished": 15
+    "finished": 15,
+    "status": "finished",
+    "type": "examine"
   },
   {
     "id": 7233,
@@ -114,7 +130,9 @@
     "joined": "08/08/2021",
     "pic": "https://robohash.org/culpaitaqueconsectetur.jpg?size=180x180&set=set1",
     "active": 3,
-    "finished": 7
+    "finished": 7,
+    "status": "active",
+    "type": "examine"
   },
   {
     "id": 6360,
@@ -127,136 +145,8 @@
     "joined": "19/03/2021",
     "pic": "https://robohash.org/voluptatenostrumreprehenderit.jpg?size=180x180&set=set1",
     "active": 3,
-    "finished": 6
-  },
-  {
-    "id": 7893,
-    "name": "Stesha Rainey",
-    "birth": "19/04/2021",
-    "email": "sraineya@arstechnica.com",
-    "gender": "Male",
-    "phone": "+86-638-332-9095",
-    "address": "Sanxing",
-    "joined": "14/07/2021",
-    "pic": "https://robohash.org/explicaboetveritatis.jpg?size=180x180&set=set1",
-    "active": 5,
-    "finished": 12
-  },
-  {
-    "id": 7937,
-    "name": "Alene Van der Brugge",
-    "birth": "02/09/2021",
-    "email": "avanb@earthlink.net",
-    "gender": "Female",
-    "phone": "+507-679-340-2650",
-    "address": "Mulatupo",
-    "joined": "24/07/2021",
-    "pic": "https://robohash.org/aliasrepudiandaeut.jpg?size=180x180&set=set1",
-    "active": 5,
-    "finished": 13
-  },
-  {
-    "id": 1586,
-    "name": "Theo Danihelka",
-    "birth": "29/10/2020",
-    "email": "tdanihelkac@google.co.uk",
-    "gender": "Female",
-    "phone": "+86-739-561-3494",
-    "address": "Tianjiaba",
-    "joined": "15/01/2021",
-    "pic": "https://robohash.org/iurefugitnobis.jpg?size=180x180&set=set1",
-    "active": 3,
-    "finished": 6
-  },
-  {
-    "id": 5446,
-    "name": "Mack Baldini",
-    "birth": "18/07/2021",
-    "email": "mbaldinid@domainmarket.com",
-    "gender": "Female",
-    "phone": "+880-870-422-0904",
-    "address": "Feni",
-    "joined": "12/10/2020",
-    "pic": "https://robohash.org/odioprovidentillo.jpg?size=180x180&set=set1",
-    "active": 1,
-    "finished": 12
-  },
-  {
-    "id": 4929,
-    "name": "Myrle Seamons",
-    "birth": "05/08/2021",
-    "email": "mseamonse@cdbaby.com",
-    "gender": "Female",
-    "phone": "+62-113-356-7877",
-    "address": "Obesi",
-    "joined": "30/12/2020",
-    "pic": "https://robohash.org/voluptatemrerumcum.jpg?size=180x180&set=set1",
-    "active": 2,
-    "finished": 5
-  },
-  {
-    "id": 4491,
-    "name": "Mella Gazzard",
-    "birth": "29/08/2021",
-    "email": "mgazzardf@wikispaces.com",
-    "gender": "Male",
-    "phone": "+48-704-891-1051",
-    "address": "Lubasz",
-    "joined": "03/10/2020",
-    "pic": "https://robohash.org/eiusnonquaerat.jpg?size=180x180&set=set1",
-    "active": 3,
-    "finished": 8
-  },
-  {
-    "id": 8819,
-    "name": "Avivah Dawtre",
-    "birth": "22/10/2020",
-    "email": "adawtreg@mysql.com",
-    "gender": "Male",
-    "phone": "+62-170-310-4188",
-    "address": "Dowan",
-    "joined": "10/10/2020",
-    "pic": "https://robohash.org/rationehicmagnam.jpg?size=180x180&set=set1",
-    "active": 2,
-    "finished": 12
-  },
-  {
-    "id": 2685,
-    "name": "Feliza Gostyke",
-    "birth": "24/04/2021",
-    "email": "fgostykeh@edublogs.org",
-    "gender": "Male",
-    "phone": "+52-609-498-9400",
-    "address": "Anahuac",
-    "joined": "18/02/2021",
-    "pic": "https://robohash.org/autemutet.jpg?size=180x180&set=set1",
-    "active": 2,
-    "finished": 15
-  },
-  {
-    "id": 3720,
-    "name": "Thorstein Barke",
-    "birth": "04/05/2021",
-    "email": "tbarkei@wikispaces.com",
-    "gender": "Male",
-    "phone": "+63-133-376-9170",
-    "address": "Cabanbanan",
-    "joined": "05/05/2021",
-    "pic": "https://robohash.org/rerumundedelectus.jpg?size=180x180&set=set1",
-    "active": 2,
-    "finished": 7
-  },
-  {
-    "id": 2767,
-    "name": "Damaris Durek",
-    "birth": "26/05/2021",
-    "email": "ddurekj@oaic.gov.au",
-    "gender": "Male",
-    "phone": "+420-478-860-5654",
-    "address": "Chrást",
-    "joined": "08/02/2021",
-    "pic": "https://robohash.org/commodiutnon.jpg?size=180x180&set=set1",
-    "active": 1,
-    "finished": 7
+    "finished": 6,
+    "status": "finished",
+    "type": "consult"
   }
 ]

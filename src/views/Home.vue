@@ -46,21 +46,10 @@
           <div class="tickets-contain">
             <TicketComp
               onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
+              v-for="patient in patients"
+              :key="patient.id"
+              :id="patient.id"
+              :name="patient.name"
             />
           </div>
         </div>
@@ -74,21 +63,10 @@
           <div class="tickets-contain">
             <TicketComp
               onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
+              v-for="patient in patients"
+              :key="patient.id"
+              :id="patient.id"
+              :name="patient.name"
             />
           </div>
         </div>
@@ -102,21 +80,10 @@
           <div class="tickets-contain">
             <TicketComp
               onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
-            />
-            <TicketComp
-              onclick="document.getElementById('ticket-page').style.display='block'"
+              v-for="patient in patients"
+              :key="patient.id"
+              :id="patient.id"
+              :name="patient.name"
             />
           </div>
         </div>
@@ -149,12 +116,20 @@
             :address="patient.address"
             :email="patient.email"
           />
-          
         </div>
       </div>
     </div>
-    <TicketPage />
-    <!-- <PatientPage /> -->
+    <TicketPage
+      v-for="patient in patients"
+      :key="patient.id"
+      :id="patient.id"
+      :name="patient.name"
+      :phone="patient.phone"
+      :joined="patient.joined"
+      :birth="patient.birth"
+      :status="patient.status"
+      :type="patient.type"
+    />
   </div>
 </template>
 
