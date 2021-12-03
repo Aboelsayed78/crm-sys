@@ -54,7 +54,7 @@ import TicketPage from "../components/TicketPage.vue";
 import NewTicket from "../components/NewTicket.vue";
 import patientsData from "../json/Patients_Data.json";
 export default {
-  data: function (){
+  data: function () {
     return {
       patients: patientsData,
     };

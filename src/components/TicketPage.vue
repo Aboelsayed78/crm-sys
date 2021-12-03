@@ -15,12 +15,12 @@
 
           <div class="data-row">
             <label for="id"><b>ticket ID</b></label>
-            <span>{{id}}</span>
+            <span>{{ id }}</span>
           </div>
 
           <div class="data-row">
             <label for="name"><b>name</b></label>
-            <span>{{name}}</span>
+            <span>{{ name }}</span>
             <select name="patient-name" id="" class="vanish">
               <option value="">Select Patient</option>
               <option value="youssef">Mohamed Ahmed</option>
@@ -31,24 +31,24 @@
 
           <div class="data-row">
             <label for="phone"><b>phone</b></label>
-            <span>{{phone}}</span>
+            <span>{{ phone }}</span>
           </div>
 
           <div class="data-row">
             <label for="reserved"><b>reserved at</b></label>
-            <span>{{birth}}</span>
+            <span>{{ birth }}</span>
             <input type="date" name="reserved" class="vanish" />
           </div>
 
           <div class="data-row">
             <label for="appointment"><b>appointment</b></label>
-            <span>{{joined}}</span>
+            <span>{{ joined }}</span>
             <input type="date" name="appointment" class="vanish" />
           </div>
 
           <div class="data-row">
             <label for="status"><b>status</b></label>
-            <span>{{status}}</span>
+            <span>{{ status }}</span>
             <select name="status" id="" class="vanish">
               <option value="active">Active</option>
               <option value="finished">Finished</option>
@@ -57,7 +57,7 @@
 
           <div class="data-row">
             <label for="type"><b>type</b></label>
-            <span>{{type}}</span>
+            <span>{{ type }}</span>
             <select name="type" id="" class="vanish">
               <option value="">Select Type</option>
               <option value="examine">Examine</option>
@@ -106,15 +106,7 @@
 import $ from "jquery";
 export default {
   name: "TicketPage",
-  props: [
-    "id",
-    "name",
-    "phone",
-    "status",
-    "type",
-    "joined",
-    "birth",
-  ],
+  props: ["id", "name", "phone", "status", "type", "joined", "birth"],
   components: {},
   mounted: function () {
     $("#edit-ticket").click(function () {

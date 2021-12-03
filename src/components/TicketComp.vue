@@ -1,12 +1,12 @@
 <template>
   <div class="ticket">
     <div class="ticket-panel">
-      <span class="id">{{id}}</span>
-      <span class="patient">{{name}}</span>
-      <span class="phone">{{phone}}</span>
-      <span class="type">{{type}}</span>
-      <span class="status">{{status}}</span>
-      <span class="appoint">{{joined}}</span>
+      <span class="id">{{ id }}</span>
+      <span class="patient">{{ name }}</span>
+      <span class="phone">{{ phone }}</span>
+      <span class="type">{{ type }}</span>
+      <span class="status">{{ status }}</span>
+      <span class="appoint">{{ joined }}</span>
     </div>
     <div class="ticket-ext">
       <h4>ticket description</h4>
@@ -29,14 +29,7 @@
 <script>
 export default {
   name: "TicketComp",
-  props: [
-    "id",
-    "name",
-    "phone",
-    "status",
-    "type",
-    "joined",
-  ],
+  props: ["id", "name", "phone", "status", "type", "joined"],
   components: {},
 };
 </script>
